@@ -1,0 +1,45 @@
+@import '../abstract/variables';
+
+%col {
+    background-color: fuchsia;
+    float: left;
+    &:not(:last-child) {
+        margin-right: $gutter-horizontal;
+    }
+}
+
+.row {
+    @include clearfix;
+    max-width: $grid-width;
+    background-color: #777;
+    margin: 0 auto;
+    color: white;
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    .col-1-of-2 {
+        @extend %col;
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+    }
+    .col-1-of-3 {
+        @extend %col;
+        width: calc(((100% - #{$gutter-horizontal * 2}) / 3));
+    }
+    .col-1-of-4 {
+        @extend %col;
+        width: calc(((100% - #{$gutter-horizontal * 3}) / 4));
+    }
+    .col-2-of-3 {
+        @extend %col;
+        width: calc(((100% - #{$gutter-horizontal * 2}) / 3) * 2 + #{$gutter-horizontal});
+    }
+    .col-2-of-4 {
+        @extend %col;
+        width: calc(((100% - #{$gutter-horizontal * 3}) / 4) * 2 + #{$gutter-horizontal});
+    }
+    .col-3-of-4 {
+        @extend %col;
+        width: calc(((100% - #{$gutter-horizontal * 3}) / 4) * 3 + #{$gutter-horizontal * 2});
+    }
+}
