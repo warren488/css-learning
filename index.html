@@ -16,6 +16,20 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation__button">MENU</label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#" class="navigation__link">About Natours</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Your Benefits</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Popular Tours</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Book Now</a></li>
+        </ul>
+      </nav>
+    </div>
     <header class="header">
       <div class="header__logo-box">
         <img src="img/logo-white.png" alt="Logo" class="header__logo" />
@@ -369,7 +383,9 @@
                   </div>
                 </div>
                 <div class="u-margin-top-medium form__group">
-                  <button type="submit" class="btn btn--primary">Next stop &rarr;</button>
+                  <button type="submit" class="btn btn--primary">
+                    Next stop &rarr;
+                  </button>
                 </div>
               </form>
             </div>
@@ -377,7 +393,33 @@
         </div>
       </section>
     </main>
-
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img
+          src="./img/logo-green-2x.png"
+          class="footer__logo"
+          alt="Full Logo"
+        />
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item footer__link">Company</li>
+              <li class="footer__item footer__link">Contact Us</li>
+              <li class="footer__item footer__link">Careers</li>
+              <li class="footer__item footer__link">Privacy Policy</li>
+              <li class="footer__item footer__link">Terms</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by <a href="#" class="footer__link">Warren Scantlebury</a>. Copy &copy;
+          </p>
+        </div>
+      </div>
+    </footer>
     <!-- <section class="grid-test">
             <div class="row">
                 <div class="col-1-of-2">
